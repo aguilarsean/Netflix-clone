@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply bg-black select-none font-body !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-red-600; 
+    }
+    nav {
+        @apply fixed flex w-full justify-between px-4 md:px-10 z-50;
+    }
+}
+
+@layer components {
+    .header__link {
+        @apply text-[#e5e5e5] text-[11px] lg:text-[16px] hover:text-[#b3b3b3] cursor-pointer transition-[.4s] relative ;
+    }
+
+    .posters {
+        @apply flex w-full rounded mx-2 my-4 md:mx-3 md:my-5 object-contain transition duration-300 select-none cursor-pointer;
+    }
+
+    .posters:hover {
+        @apply scale-110 opacity-100;
+    }
+    
+    .poster_normal {
+        @apply flex w-full scroll-smooth overflow-x-scroll h-44 overflow-y-hidden;
+    }
+
+    .poster_normal::-webkit-scrollbar {
+        @apply hidden scroll-smooth;
+    }
+
+    .poster_large {
+        @apply flex w-full h-72;
+    }
+
+    .banner__button {
+        @apply flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-base ;
+    }
+}
