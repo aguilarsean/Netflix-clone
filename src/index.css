@@ -21,7 +21,7 @@
     }
 
     .posters {
-        @apply flex w-full rounded mx-2 my-4 md:mx-3 md:my-5 object-contain transition duration-300 select-none cursor-pointer;
+        @apply block w-full h-auto rounded mx-2 my-4 md:mx-3 md:my-5 object-contain transition duration-300 select-none cursor-pointer;
     }
 
     .posters:hover {

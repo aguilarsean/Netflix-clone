@@ -24,7 +24,7 @@ const Nav= () => {
   }, [])
 
   return (
-    <nav className={`${isScrolled && 'bg-black'}`}>
+    <nav className={`${isScrolled && 'bg-black transition duration-300'}`}>
       <div className="flex items-center">
         <img src={logo} alt={logo} className='object-contain w-20 md:w-28 mr-6 cursor-pointer' />
 
